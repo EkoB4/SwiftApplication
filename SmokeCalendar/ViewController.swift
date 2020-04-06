@@ -17,11 +17,11 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.shadowImage = UIImage()
         main.layer.cornerRadius = 10
     }
-    var counter =  0
+    var count = 0
     @IBAction func smokeTap(_ sender: Any) {
-        counter = counter + 1 
-        countSmoke.text = String(counter)
+        count = count + 1
+        countSmoke.text = String(count)
     }
-     
+    
 }
 
