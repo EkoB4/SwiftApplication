@@ -7,21 +7,19 @@
 //
 
 import UIKit
-
-class ViewController: UIViewController {
+class ViewController: UIViewController{
     @IBOutlet weak var countSmoke: UILabel!
     @IBOutlet weak var main: UIButton!
+    var UserCount: User?
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         main.layer.cornerRadius = 10
     }
-    var count = 0
     @IBAction func smokeTap(_ sender: Any) {
-        count = count + 1
-        countSmoke.text = String(count)
+        
+        print(UserCount ?? "calismadi")
     }
-    
 }
 
